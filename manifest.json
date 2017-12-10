@@ -20,7 +20,7 @@
   },
 
   "background": {
-    "scripts": ["parrot-e.js"]
+    "scripts": ["background.js"]
   },
 
   "web_accessible_resources": [
