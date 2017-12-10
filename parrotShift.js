@@ -9,6 +9,6 @@ Array.forEach(document.getElementsByTagName('img'),(orig) => {
     console.log(`orig.height${origHeight}`);
     var parrotURL = `parrots/${arrayParrots[Math.floor(Math.random() * parrotPopulation)]}.gif`;
     orig.src = "http://cultofthepartyparrot.com/parrots/hd/parrot.gif";
-    // document.extension.getURL(parrotURL);
+    //orig.src document.extension.getURL(parrotURL);
     orig.height = origHeight;
 });
