@@ -1,0 +1,30 @@
+{
+
+  "manifest_version": 2,
+  "name": "Parrots, Parrot, Parrot & Parrot",
+  "version": "1.0",
+
+  "description": "Party Parrot on your gyutto-e!!",
+  "icons": {
+    "128": "icons/preparrot.gif"
+  },
+
+  "permissions": [
+    "<all_urls>",
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/preparrot.gif",
+    "default_title": "Preparrot"
+  },
+
+  "background": {
+    "scripts": ["parrot-e.js"]
+  },
+
+  "web_accessible_resources": [
+    "parrots/hd/*.gif",
+    "parrotShift.js"
+  ]
+}
