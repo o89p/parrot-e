@@ -7,8 +7,8 @@ const parrotPopulation = arrayParrots.length;
 
 function parrotShift(){
   Array.forEach(document.getElementsByTagName('img'),(orig) => {
-    var origHeight = orig.height;
-    var parrotURL = arrayParrots[
+    let origHeight = orig.height;
+    let parrotURL = arrayParrots[
       Math.floor(Math.random() * parrotPopulation)]
       + ".gif";
     orig.src = extURL + parrotURL;
@@ -16,8 +16,8 @@ function parrotShift(){
   });
 }
 
-var myPort = browser.runtime.connect({name:"port-from-cs"});
-var extURL;
+let myPort = browser.runtime.connect({name:"port-from-cs"});
+let extURL;
 myPort.onMessage.addListener((m) => {
   extURL = m.extURL;
   parrotShift();
